@@ -23,9 +23,9 @@ services:
 
   n8n:
     image: n8nio/n8n
+    restart: always
     environment:
       - N8N_NATIVE_PYTHON_RUNNER=true
-      - N8N_USER_MANAGEMENT_DISABLED=false
       - N8N_RUNNERS_ENABLED=true
       - N8N_RUNNERS_MODE=external
       - N8N_RUNNERS_AUTH_TOKEN=your_secure_random_token
@@ -44,7 +44,6 @@ services:
       - DB_POSTGRESDB_PASSWORD=strongpassword
     ports:
       - "5678:5678"
-      - "5679:5679"
     labels:
       - traefik.enable=true
       - traefik.http.routers.n8n.rule=Host(`${SUBDOMAIN}.${DOMAIN_NAME}`)
@@ -67,8 +66,8 @@ services:
 
   runners:
     image: n8nio/runners
+    restart: always
     environment:
-      - N8N_USER_MANAGEMENT_DISABLED=false
       - N8N_RUNNERS_AUTH_TOKEN=your_secure_random_token
       - N8N_RUNNERS_TASK_BROKER_URI=http://n8n:5679
     volumes:
@@ -88,7 +87,6 @@ services:
       - postgres_data:/var/lib/postgresql/data
 
 volumes:
-  certs:
   n8n_data:
   postgres_data:
   traefik_data:
