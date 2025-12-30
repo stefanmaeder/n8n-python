@@ -1,0 +1,8 @@
+{
+  "env-overrides": {
+    "python": {
+      "N8N_RUNNERS_STDLIB_ALLOW": "requests, json",
+      "N8N_RUNNERS_EXTERNAL_ALLOW": "pandas, numpy"
+    }
+  }
+}
