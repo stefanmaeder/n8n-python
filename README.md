@@ -8,7 +8,7 @@ git clone https://github.com/stefanmaeder/n8n-python.git
 ```
 3. create .env
 ```
-cd n8-python
+cd n8n-python
 nano .env
 ```
 
