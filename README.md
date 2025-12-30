@@ -14,24 +14,11 @@ nano .env
 
 copy & paste this and edit some parts:
 ```
-# DOMAIN_NAME and SUBDOMAIN together determine where n8n will be reachable from
-# The top level domain to serve from
-DOMAIN_NAME=example.com
-
-# The subdomain to serve from
 SUBDOMAIN=www
-
-# The above example serve n8n at: https://n8n.example.com
-
-# Optional timezone to set which gets used by Cron and other scheduling nodes
-# New York is the default value if not set
+DOMAIN_NAME=example.com
 GENERIC_TIMEZONE=Europe/Berlin
-
-# The email address to use for the TLS/SSL certificate creation
-SSL_EMAIL=info@example.com
-
+LETSENCRYPT_EMAIL=info@example.com
 DATABASE_PASSWORD=myPasswordForTheDatabase
-
 RUNNER_PASSWORD=myPasswordForTheRunner
 ```
 
