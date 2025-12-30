@@ -12,7 +12,7 @@ cd n8n-python
 nano .env
 ```
 
-copy&paste this:
+copy & paste this and edit some parts:
 ```
 # DOMAIN_NAME and SUBDOMAIN together determine where n8n will be reachable from
 # The top level domain to serve from
@@ -38,11 +38,11 @@ RUNNER_PASSWORD=myPasswordForTheRunner
 3. set up containers
 
 ```
-podman compose up
+podman compose up --build
 ```
 
 or
 
 ```
-docker compose up
+docker compose up --build
 ```
