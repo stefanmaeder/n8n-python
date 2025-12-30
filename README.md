@@ -6,7 +6,7 @@ All-in-one with python runner
 ```
 git clone https://github.com/stefanmaeder/n8n-python.git
 ```
-3. create .env
+2. create .env
 ```
 cd n8n-python
 nano .env
