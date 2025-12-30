@@ -22,7 +22,5 @@ GENERIC_TIMEZONE=Europe/Berlin
 
 # The email address to use for the TLS/SSL certificate creation
 SSL_EMAIL=info@example.com
-SERVER_NAME=www.example.com
-LETSENCRYPT_EMAIL=info@example.com
 ```
 3. podman (or docker) compose
