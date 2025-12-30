@@ -1,6 +1,6 @@
 # n8n-python
 
-The easiest way to run Python Code (Native) on self-hosted n8n. Additional libraries like pandas are also available. You can add more in the pip_requirements.txt. The compose file creates with podman (or docker) the Containers für n8n-server, traefik (currently as reverse proxy), the n8n-runners (Javascript & Python) and postgres (as database instead of sqlite). The first configuration is awful, so save some time with this and have fun with n8n!
+The easiest way to run Python Code (Native) on self-hosted n8n. Additional libraries like pandas are also available. You can add more in the "pip_requirements.txt". The compose file creates with podman (or docker) the Containers for n8n-server, traefik (currently as reverse proxy), the n8n-runners (Javascript & Python) and postgres (as database instead of sqlite). The first configuration is awful, so save some time with this and have fun with n8n!
 
 1. git clone:
 ```
