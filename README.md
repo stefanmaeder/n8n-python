@@ -2,10 +2,17 @@
 All-in-one with python runner
 
 
-1. git clone
-2. create .env
+1. git clone:
+```
+git clone https://github.com/stefanmaeder/n8n-python.git
+```
+3. create .env
+```
+cd n8-python
+nano .env
+```
 
-.env
+copy&paste this:
 ```
 # DOMAIN_NAME and SUBDOMAIN together determine where n8n will be reachable from
 # The top level domain to serve from
@@ -23,4 +30,15 @@ GENERIC_TIMEZONE=Europe/Berlin
 # The email address to use for the TLS/SSL certificate creation
 SSL_EMAIL=info@example.com
 ```
-3. podman (or docker) compose
+
+3. set up containers
+
+```
+podman compose up
+```
+
+or
+
+```
+docker compose up
+```
