@@ -1,5 +1,5 @@
 # n8n-python
-All-in-one with python runner
+All-in-one for n8n to use the Python Code (Native)!
 
 
 1. git clone:
