@@ -29,6 +29,10 @@ GENERIC_TIMEZONE=Europe/Berlin
 
 # The email address to use for the TLS/SSL certificate creation
 SSL_EMAIL=info@example.com
+
+DATABASE_PASSWORD=myPasswordForTheDatabase
+
+RUNNER_PASSWORD=myPasswordForTheRunner
 ```
 
 3. set up containers
