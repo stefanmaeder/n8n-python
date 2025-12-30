@@ -1,6 +1,6 @@
 # n8n-python
-All-in-one for n8n to use the Python Code (Native)!
 
+The easiest way to run Python Code (Native) on self-hosted n8n. Additional libraries like pandas are also available. The compose file creates with podman (or docker) the Containers für n8n-server, traefik (currently as reverse proxy), the n8n-runners (Javascript & Python) and postgres (as database instead of sqlite). The first configuration is awful, so save some time with this and have fun with n8n!
 
 1. git clone:
 ```
