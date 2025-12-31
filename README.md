@@ -12,7 +12,7 @@ cd n8n-python
 nano .env
 ```
 
-copy & paste this and edit some parts:
+copy & paste this and edit some parts (in the .env File):
 ```
 SUBDOMAIN=www
 DOMAIN_NAME=example.com
